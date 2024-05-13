@@ -13,7 +13,7 @@ const About: React.FC<{}> = () => {
           EXPLORE NOW
         </p>
         <p className="text-gray-300 text-center ">
-          I'm a passionate full stack developer with over two years of hands-on experience in crafting innovative solutions that drive business growth. Proficient in a wide range of technologies including React.js, Next.js, Express.js, and Laravel, I specialize in developing seamless user experiences and robust backend systems.
+          I\'m a passionate full stack developer with over two years of hands-on experience in crafting innovative solutions that drive business growth. Proficient in a wide range of technologies including React.js, Next.js, Express.js, and Laravel, I specialize in developing seamless user experiences and robust backend systems.
           <br />
           <br />
           My journey in software development has been marked by a relentless pursuit of excellence and a commitment to continuous learning. I thrive in dynamic, collaborative environments where I can leverage my technical expertise to tackle complex challenges and deliver impactful solutions.
