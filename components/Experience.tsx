@@ -8,7 +8,7 @@ const Experience: React.FC<{}> = () => {
         EXPERIENCE
       </h2>
       <p className=" tracking-[0.5em] text-center text-transparent font-light pb-5  bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500  text-1xl ">
-        EXPLORE NOW
+        EXPLORE NOW 
       </p>
       <div className=" container mx-auto 2xl ">
         <div className="md:flex md:flex-row md:justify-between pt-5">
