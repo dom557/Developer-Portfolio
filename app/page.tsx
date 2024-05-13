@@ -11,7 +11,7 @@ export default function Home() {
         <Banner />
         <About />
         <Experience />
-        <Projects />
+{/*         <Projects /> */}
         <Footer />
       </div>
     </main>
