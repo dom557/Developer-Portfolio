@@ -17,7 +17,7 @@ const Banner: React.FC<{}> = () => {
           />
         </div>
 
-        <div className="flex flex-col gap-6 mt-10 cursor-pointer animate-bounce tracking-tighter text-7xl font-semibold text-white max-w-[600px] w-auto h-auto">
+        <div className="flex flex-col gap-6 mt-10 cursor-pointer  tracking-tighter text-7xl font-semibold text-white max-w-[600px] w-auto h-auto">
           Abahazem Mohamed!
         </div>
         <div className="flex justify-center">
