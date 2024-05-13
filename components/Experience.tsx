@@ -14,7 +14,7 @@ const Experience: React.FC<{}> = () => {
         <div className="md:flex md:flex-row md:justify-between pt-5">
           <div className="flex items-center gap-3">
             <p className="text-gray-300 ">
-              <span className="font-semibold">CMC  /</span> Software Engineer
+              <span className="font-semibold">CMC /</span> Software Engineer
             </p>
           </div>
           <p className="text-gray-300 md:pt-0 pt-3">
