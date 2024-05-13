@@ -10,7 +10,7 @@ export const Social_Icons = [
     alt: "Instagram",
   },
   {
-    link: "www.linkedin.com/in/mohamed-elaakeb-abahazem/",
+    link: "https://www.linkedin.com/in/mohamed-elaakeb-abahazem/",
     image: "/LinkedIn.svg",
     alt: "LinkedIn",
   },
