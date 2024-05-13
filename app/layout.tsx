@@ -7,28 +7,26 @@ import Navbar from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ibiimemon.com/"),
-  title: "Ibrahim Memon | Next.js | React | ReactNative | Android",
+  metadataBase: new URL("https://abahazem-portfolio.vercel.app/"),
+  title: "Abahazem Mohamed | Next.js | React  | Web-DEV",
   description:
-    "Frontend & Mobile App Developer from Pakistan with 3+ years of expertise. Senior Software Engineer. Specializing mobile apps, UX, and JavaScript technologies.",
+    "Full Stack  Developer from Morocco with 2 years of expertise. Senior Digital Developer. Specializing web apps , DevOps, and JavaScript technologies.",
   keywords: [
     "Developer",
     "Portfolio",
     "Developer Portflio",
-    "Ibrahim Memon",
+    "Abahazem",
     "Next.js",
     "React",
-    "ReactNative",
-    "Android",
   ],
   openGraph: {
-    title: "Ibrahim Memon | Next.js | React | ReactNative | Android",
+    title: "Abahazem Mohamed | Next.js | React  | Web-DEV",
     description:
-      "Frontend & Mobile App Developer from Pakistan with 3+ years of expertise. Senior Software Engineer. Specializing mobile apps, UX, and JavaScript technologies.",
+    "Full Stack  Developer from Morocco with 2 years of expertise. Senior Digital Developer. Specializing web apps , DevOps, and JavaScript technologies.",
     images: "/OpenGraph.jpg",
   },
   alternates: {
-    canonical: "https://ibiimemon.com/",
+    canonical: "https://abahazem-portfolio.vercel.app/",
   },
 };
 
