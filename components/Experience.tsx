@@ -24,16 +24,16 @@ const Experience: React.FC<{}> = () => {
 
         <p className="text-gray-300 pt-5">
           🚀 Experienced Full Stack Developer | Passionate About Innovation and Collaboration 🚀
-
-          With over two years of hands-on experience in full stack development, I've honed my skills across a wide array of technologies to deliver cutting-edge solutions for diverse projects. Known for my adept problem-solving abilities and unwavering commitment to excellence, I thrive in collaborative environments where innovation flourishes.
-
+          <br/><br/>
+          With over two years of hands-on experience in full stack development, I&apos;ve honed my skills across a wide array of technologies to deliver cutting-edge solutions for diverse projects. Known for my adept problem-solving abilities and unwavering commitment to excellence, I thrive in collaborative environments where innovation flourishes.
+          <br/><br/>
           🔹 Technical Expertise: Proficient in React.js, Next.js, Express.js, Laravel, and more, I specialize in crafting intuitive user interfaces and robust backend systems. My comprehensive understanding of the entire stack enables me to seamlessly integrate frontend and backend components, ensuring optimal performance and a superior user experience.
-
-          🔹 Proven Track Record: Throughout my career, I've spearheaded the development of numerous projects, showcasing my ability to deliver high-quality solutions that meet the unique needs of each client. From optimizing performance to enhancing security measures, I approach each task with creativity and technical acumen.
-
+          <br/><br/>
+          🔹 Proven Track Record: Throughout my career, I&apos;ve spearheaded the development of numerous projects, showcasing my ability to deliver high-quality solutions that meet the unique needs of each client. From optimizing performance to enhancing security measures, I approach each task with creativity and technical acumen.
+          <br/><br/>
           🔹 Passionate About Growth: Committed to continuous learning and professional development, I eagerly seek out new challenges and opportunities to expand my skill set. I thrive on collaborating with like-minded professionals to drive innovation and deliver impactful solutions that make a difference.
-
-          Let's connect and explore how we can collaborate to drive positive change through innovative software development solutions!
+          <br/><br/>
+          Let&apos;s connect and explore how we can collaborate to drive positive change through innovative software development solutions!
         </p>
         <div className="flex-col flex sm:flex-row ">
           <div className="bg-transparent mt-5 mr-2 cursor-pointer rounded-3xl text-white py-2 px-5 border border-[#2E2E2E] w-max">
