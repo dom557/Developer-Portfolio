@@ -14,7 +14,7 @@ const Navbar: React.FC<{}> = () => {
             width={50}
             height={50}
             sizes="100vw"
-            className="w-60 h-auto animate-ping"
+            className="w-60 h-auto left-14 animate-pulse"
           />
 
         </a>
