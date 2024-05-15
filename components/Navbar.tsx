@@ -9,12 +9,12 @@ const Navbar: React.FC<{}> = () => {
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
         <a href="/" className="h-auto w-auto flex flex-row items-center">
           <Image
-          src="/Logo.svg"
-          alt="logo"
-          width={50} // Adjust this value to decrease the width
-          height={50} // Adjust this value to maintain aspect ratio
-          sizes="100vw"
-          className="w-full h-auto"
+            src="/Logo.png"
+            alt="logo"
+            width={100}
+            height={100}
+            sizes="100vw"
+            className="w-full h-auto"
           />
 
         </a>
