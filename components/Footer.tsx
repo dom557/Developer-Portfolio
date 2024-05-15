@@ -5,8 +5,8 @@ import React from "react";
 
 const Footer: React.FC<{}> = () => {
   return (
-    <div className=" container mx-auto 2xl pt-[50px] pb-8 ">
-      <div className="pb-10 justify-center flex ">
+    <div className="container mx-auto 2xl pt-[50px] pb-8">
+      <div className="pb-10 justify-center flex">
         {Social_Icons.map((social) => {
           return (
             <Link
@@ -14,7 +14,7 @@ const Footer: React.FC<{}> = () => {
               rel="noopener noreferrer"
               target="_blank"
               key={social.alt}
-              className="z-[1]"
+              className="z-[1] transition-transform duration-300 ease-in-out transform hover:scale-110" // Added Tailwind CSS classes for transition
             >
               <Image
                 src={social.image}
