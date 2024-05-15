@@ -14,7 +14,7 @@ const Footer: React.FC<{}> = () => {
               rel="noopener noreferrer"
               target="_blank"
               key={social.alt}
-              className="z-[1] transition-transform duration-300 ease-in-out transform hover:scale-110" // Added Tailwind CSS classes for transition
+              className="z-[1] transition-transform duration-300 ease-in-out hover:brightness-200 transform hover:scale-110" // Added Tailwind CSS classes for transition
             >
               <Image
                 src={social.image}
