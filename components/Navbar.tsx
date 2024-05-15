@@ -14,7 +14,7 @@ const Navbar: React.FC<{}> = () => {
             width={50}
             height={50}
             sizes="100vw"
-            className="w-full h-auto"
+            className="w-60 h-auto"
           />
 
         </a>
