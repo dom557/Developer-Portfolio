@@ -45,9 +45,11 @@ const Banner: React.FC<{}> = () => {
         <div className="text-md flex justify-center">
           <button
             onClick={() => window.open("mailto:kingmohaemed@gmail.com")}
-            className=" z-[1]     padding-20  hover:bg-white rounded-3xl  text-white font-semibold hover:text-black py-3 px-10  border-[0.1px] border-white hover:border-transparent ">
-            Contact Me
+            className="z-[1] py-3 px-10 rounded-3xl text-white font-semibold hover:text-black transition duration-300 ease-in-out transform hover:scale-110 bg-gradient-to-r from-purple-500 to-pink-500"
+            >
+              Contact Me
           </button>
+
         </div>
       </div>
     </div>
