@@ -28,5 +28,9 @@
     "tailwindcss": "^3.3.0",
     "three": "^0.159.0",
     "typescript": "^5"
-  }
+  },
+  "description": "[![Site preview](/public/OpenGraph.jpg)](https://abahazem-portfolio.vercel.app/)",
+  "main": "next.config.js",
+  "author": "",
+  "license": "ISC"
 }
