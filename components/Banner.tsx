@@ -18,8 +18,11 @@ const Banner: React.FC<{}> = () => {
         </div>
 
         <div className="flex flex-col gap-6 mt-10 cursor-pointer animate-pulse tracking-tighter text-7xl font-semibold text-white max-w-[600px] w-auto h-auto relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-900 to-transparent"></div>
-              Abahazem Mohamed!
+            <span className="text-transparent font-semibold  bg-clip-text bg-gradient-to-r from-blue-500 to-orange-400">
+               Abahazem
+            </span> 
+             Mohamed!
+            
         </div>
 
         
