@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-[#111] overflow-y-scroll overflow-x-hidden`}>
+        className={`${inter.className} bg-[#111] overflow-y-scroll blur-sm overflow-x-hidden`}>
         <StarsCanvas />
         <Navbar />
         {children}
