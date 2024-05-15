@@ -1,12 +1,12 @@
 # Personal Developer Portfolio 🚀
 
-[![Site preview](/public/site-preview.png)](https://developer-portfolio-ibrahim-memons-projects.vercel.app/)
+[![Site preview](/public/site-preview.png)](https://abahazem-portfolio.vercel.app/)
 
 Welcome to my developer portfolio! This project showcases my skills, projects, and experience as a developer. Built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com). it not only provides a visually appealing representation of my work but also ensures optimal performance. View the [live site](https://developer-portfolio-jokpvaf4a-ibrahim-memons-projects.vercel.app/).
 
 # Features 🎉
 
-The whole [portfolio](https://developer-portfolio-jokpvaf4a-ibrahim-memons-projects.vercel.app/) is a React-based single page app built with Next.js in Typescript, using only statically generated pages.
+The whole [portfolio](https://abahazem-portfolio.vercel.app/) is a React-based single page app built with Next.js in Typescript, using only statically generated pages.
 
 # Fonts ✍🏻
 
@@ -19,7 +19,9 @@ All project images live under `public/images` and are automatically attached to 
 # ✨ Development
 
 ```bash
-git clone git@github.com:ibrahimmemonn/Developer-Portfolio.git
+
+
+git clone git@github.com/dom557/Developer-Portfolio.git
 cd Developer-Portfolio/
 
 # GITHUB_TOKEN is required for some parts
