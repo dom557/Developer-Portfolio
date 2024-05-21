@@ -28,7 +28,7 @@ const Footer: React.FC<{}> = () => {
         })}
       </div>
       <p className="text-gray-300 text-center text-sm">
-        Created with ❤️ BY ABAHAZEM :)
+        Created with ❤️ BY ABAHAZEM 
       </p>
     </div>
   );
