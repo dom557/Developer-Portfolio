@@ -1,105 +1,62 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
+
+interface Project {
+  name: string;
+  description: string;
+  html_url: string;
+}
 
 const Projects: React.FC<{}> = () => {
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    fetchProjects();
+  }, []);
+
+  const fetchProjects = async () => {
+    try {
+      const response = await fetch("https://api.github.com/users/dom557/repos");
+      const data = await response.json();
+      // Filter out the repositories you want to display
+      const filteredProjects = data
+        .filter((repo: any) => repo.name.startsWith("password-generator") || repo.name.startsWith("mern-chat-app") || repo.name.startsWith("git-helper-cli") || repo.name.startsWith("automate_tasks"))
+        .map((repo: any) => ({
+          name: repo.name,
+          description: repo.description,
+          html_url: repo.html_url,
+        }));
+      setProjects(filteredProjects);
+    } catch (error) {
+      console.error("Error fetching projects:", error);
+    }
+  };
+
   return (
     <section id="projects">
       <h2 className="text-white font-semibold text-center text-6xl pt-[35px]">
         PROJECTS
       </h2>
-      <p className=" tracking-[0.5em] text-center text-transparent font-light pb-5  bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500  text-1xl ">
+      <p className="tracking-[0.5em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500 text-1xl ">
         EXPLORE NOW
       </p>
-      <div className=" container mx-auto 2xl  ">
-        <div className="flex-col flex md:flex-row  mt-7">
-          <Link
-            href="https://web.hr/"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="z-[1]">
-            <div className="flex-row flex mb-5">
-              <Image
-                src="/FirstProject.png"
-                height={150}
-                width={150}
-                alt="WebHR Project"
-              />
-              <div className="p-3">
-                <p className="text-white font-semibold text-xl">WebHR</p>
-                <p className="text-gray-500 text-[10px]">
-                  Designed a modern UI website comprising more than 50 screens,
-                  along with the integration of a blog using Next.js.
-                </p>
+      <div className="container mx-auto 2xl">
+        <div className="flex-col flex md:flex-row mt-7">
+          {projects.map((project) => (
+            <a
+              href={project.html_url}
+              rel="noopener noreferrer"
+              target="_blank"
+              key={project.name}
+              className="z-[1]"
+            >
+              <div className="flex-row flex mb-5">
+                <div className="p-3">
+                  <p className="text-white font-semibold text-xl">{project.name}</p>
+                  <p className="text-gray-500 text-[10px]">{project.description}</p>
+                </div>
               </div>
-            </div>
-          </Link>
-          <Link
-            href="https://hireside.com/"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="z-[1]">
-            <div className="flex-row flex mb-5">
-              <Image
-                src="/SecondProject.png"
-                height={150}
-                width={150}
-                alt="HireSide"
-              />
-              <div className="p-3">
-                <p className="text-white font-semibold text-xl">HireSide</p>
-                <p className="text-gray-500 text-[10px]">
-                  Developed a web application on Next.js that allows users to
-                  apply for jobs, create job posts, and manage their company
-                  profiles.
-                </p>
-              </div>
-            </div>
-          </Link>
-        </div>
-        <div className="flex-col flex md:flex-row ">
-          <Link
-            href="https://www.vergesystems.com/"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="z-[1]">
-            <div className="flex-row flex mb-5">
-              <Image
-                src="/ThirdProject.png"
-                height={150}
-                width={150}
-                alt="VergeSystems"
-              />
-              <div className=" p-3 ">
-                <p className="text-white font-semibold text-xl">
-                  Verge Systems
-                </p>
-                <p className="text-gray-500 text-[10px]">
-                  Developed the Verge Systems website using React.js.
-                </p>
-              </div>
-            </div>
-          </Link>
-          <Link
-            href="http://44.201.47.75/"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="z-[1]">
-            <div className="flex-row flex mb-5">
-              <Image
-                src="/FourProject.png"
-                height={150}
-                width={150}
-                alt="Payoasis"
-              />
-              <div className="p-3 ">
-                <p className="text-white font-semibold text-xl">Payoasis</p>
-                <p className="text-gray-500 text-[10px]">
-                  Designed the modern UI for a banking website utilizing Gatsby.
-                </p>
-              </div>
-            </div>
-          </Link>
+            </a>
+          ))}
         </div>
       </div>
     </section>
