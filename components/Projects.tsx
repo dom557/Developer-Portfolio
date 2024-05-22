@@ -1,36 +1,8 @@
-import React, { useEffect, useState } from "react";
-
-interface Project {
-  name: string;
-  description: string;
-  html_url: string;
-}
+import React from "react";
+import repositoryData, { Repository } from "./repositoryData";
+import clsx from "clsx";
 
 const Projects: React.FC<{}> = () => {
-  const [projects, setProjects] = useState<Project[]>([]);
-
-  useEffect(() => {
-    fetchProjects();
-  }, []);
-
-  const fetchProjects = async () => {
-    try {
-      const response = await fetch("https://api.github.com/users/dom557/repos");
-      const data = await response.json();
-      // Filter out the repositories you want to display
-      const filteredProjects = data
-        .filter((repo: any) => repo.name.startsWith("password-generator") || repo.name.startsWith("mern-chat-app") || repo.name.startsWith("git-helper-cli") || repo.name.startsWith("automate_tasks"))
-        .map((repo: any) => ({
-          name: repo.name,
-          description: repo.description,
-          html_url: repo.html_url,
-        }));
-      setProjects(filteredProjects);
-    } catch (error) {
-      console.error("Error fetching projects:", error);
-    }
-  };
-
   return (
     <section id="projects">
       <h2 className="text-white font-semibold text-center text-6xl pt-[35px]">
@@ -41,18 +13,18 @@ const Projects: React.FC<{}> = () => {
       </p>
       <div className="container mx-auto 2xl">
         <div className="flex-col flex md:flex-row mt-7">
-          {projects.map((project) => (
+          {repositoryData.map((project: Repository) => (
             <a
               href={project.html_url}
               rel="noopener noreferrer"
               target="_blank"
               key={project.name}
-              className="z-[1]"
+              className={clsx("z-[1]", "project-link")}
             >
               <div className="flex-row flex mb-5">
                 <div className="p-3">
                   <p className="text-white font-semibold text-xl">{project.name}</p>
-                  <p className="text-gray-500 text-[10px]">{project.description}</p>
+                  <p className="text-gray-500 text-[10px]">{project.language}</p>
                 </div>
               </div>
             </a>

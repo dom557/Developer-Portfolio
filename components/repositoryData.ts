@@ -3,24 +3,29 @@
 export interface Repository {
     name: string;
     language: string;
-    url: string;
+    html_url: string;
   }
   
   const repositoryData: Repository[] = [
     {
       name: "git-helper-cli",
       language: "TypeScript",
-      url: "https://github.com/dom557/git-helper-cli",
+      html_url: "https://github.com/dom557/git-helper-cli",
     },
     {
       name: "password-generator",
-      language: "JavaScript",
-      url: "https://github.com/dom557/password-generator",
+      language: "Python",
+      html_url: "https://github.com/dom557/password-generator",
     },
     {
       name: "mern-chat-app",
       language: "JavaScript",
-      url: "https://github.com/dom557/mern-chat-app",
+      html_url: "https://github.com/dom557/mern-chat-app",
+    },
+    {
+      name: "ai-recipe-generator",
+      language: "Python",
+      html_url: "https://github.com/dom557/ai-recipe-generator",
     },
   ];
   
